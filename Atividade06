@@ -1,0 +1,3 @@
+nome = "Thayane"
+
+print("Meu nome é", nome, "e esse é meu primeiro print em tela!")
