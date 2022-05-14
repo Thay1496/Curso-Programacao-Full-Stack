@@ -1,0 +1,16 @@
+PEÇA DOIS NÚMEROS AO USUÁRIO E MOSTRE OS RESULTADOS DE UMA CALCULADORA BÁSICA:
+1) ADIÇÃO (*)
+2) SUBTRAÇÃO (-)
+3) MULTIPLICAÇÃO (*)
+4) DIVISÃO (/)
+
+num1 = float(input("Digite um numero: "))
+num2 = float(input("Digite outro numero: "))
+soma = num1 + num2
+sub = num1 - num2
+multi = num1 * num2
+div = num1 / num2
+print("A soma dos numeros é: ", soma)
+print("A subtração dos numeros é :", sub)
+print("A multiplicação dos numeros é: ", multi)
+print("A divisão dos numeros é: ", div)
