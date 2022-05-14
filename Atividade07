@@ -1,0 +1,9 @@
+1ºForma
+valor01 = 10
+valor02 = 50
+resultado = valor01 * valor02
+print(resultado)
+
+2ºForma
+cálculo = 10*50
+print(calculo)
