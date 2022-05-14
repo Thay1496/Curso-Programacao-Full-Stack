@@ -1,0 +1,14 @@
+PEÇA NOME E SOBRENOME E APRESENTE O NOME E SOBRENOME
+
+nome = input("Digite o seu nome: ")
+sobrenome = input("Digite o seu sobrenome: ")
+print(nome, sobrenome)
+
+
+
+PEÇA DOIS NÚMEROS INTEIROS E APRESENTE A SOMA DOS DOIS
+
+#Fundição
+numero01 = int(input("Digite um numero: "))
+numero02 = int(input("Digite outro numero: "))
+print(numero01 + numero02)
