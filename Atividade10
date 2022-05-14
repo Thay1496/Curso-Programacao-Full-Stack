@@ -1,0 +1,10 @@
+REFAÇA O PROGRAMA DAS MÉDIAS, AGORA COM 4 NOTAS, PEDINDO AS NOTAS PARA O USUÁRIO,E ,POR FIM, MOSTRAR O RESULTADO EM TELA.
+O RESULTADO É A MÉDIA DAS NOTAS INFORMADAS.
+
+nota01 = float(input("Digite a primeira nota: "))
+nota02 = float(input("Digite uma segunda nota: "))
+nota03 = float(input("Digite a terceira nota: "))
+nota04 = float(input("Digite uma nota quarta: "))
+soma = nota01 + nota02 + nota03 + nota04
+mídia = soma/4
+print("A media das notas e ", media)
