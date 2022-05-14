@@ -1,0 +1,27 @@
+# print("Aula Introdução ao Python")
+
+print("Esta é uma aula de programação")
+
+# print("Vimos que existem várias linguagens,"
+
+# print("como")
+
+# print("a linguagem Java!")
+
+print("A linguagem que estamos usando é")
+
+print("a linguagem Python!")
+
+print("Nossa Aula é na")
+
+# print("Infinito")
+
+print("também conhecida como")
+
+print("Escola Infinita.")
+
+# print("Bons códigos!")
+
+# print("Esta Linha será um comentário em breve!")
+
+*Um comentário é feito como o # no inicio da frase
