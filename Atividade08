@@ -1,0 +1,10 @@
+1º Forma
+numero01 = 8
+numero02 = 9
+numero03 = 7
+media = (numero01+numero02+numero03)/3
+mídia impressa)
+
+2º Forma
+mídia02 = (8+9+7)/3
+imprimir(media02)
