@@ -1,0 +1,195 @@
+1. (EASY) Faça um Programa que converte metros
+para centimetros.
+
+RESPOSTA
+metro = float(input("Digite um valor em metros: "))
+cm = metro * 100
+print("O valor em cm e ", cm)
+
+2. (EASY) Faça um Programa que peça
+o raio de um círculo,
+calcular
+e mais sua área. (Valor de PI x R^2)
+
+RESPOSTA
+raio = float(input("Digite o valor do raio: "))
+área = 3,14 * raio**2
+print("O valor da area do circulo e: ", area)
+
+3. (HARD) Faça um Programa que peça
+o raio de um círculo,
+calcular
+e mais sua área. Utilize uma biblioteca MATH para conseguir o valor de PI.
+
+RESPOSTA
+raio = float(input("Digite o valor do raio: "))
+área = 3,14 * raio**2
+print("O valor da area do circulo e: ", area)
+
+4. (EASY) Faça um Programa que peça a temperatura em graus Fahrenheit, transforme e
+mostre a temperatura em graus Celsius.
+C = 5 * ((F-32) / 9)
+
+RESPOSTA
+fah = float(input("Digite a temperatura em graus Fahrenheit: "))
+celsius = 5 * ((fah-32)/9)
+print("A temperatura em Celsius é ", celsius)
+
+5. (HARD) Faça um Programa que peça a temperatura em graus Celsius, transforme e
+mostre em graus Fahrenheit.
+
+RESPOSTA
+celsius = float(input("Digite a temperatura em graus Celsius: "))
+fah = 32 + ((celsius * 9)/5)
+print("A temperatura em Fahrenheit é", fah)
+
+6. (FÁCIL) Imprima um número em tela
+
+RESPOSTA
+imprimir(10)
+
+7. (FÁCIL) Crie uma variável com um número inteiro,
+imprimir uma variável
+
+numero = 7
+imprimir (número)
+
+8. (EASY) Peça ao usuário um número e depois imprima o número em tela
+
+RESPOSTA
+numero = int(input("Digite um numero: "))
+imprimir (número)
+
+9. (EASY) Faça um Programa que peça dois números e imprima a soma.
+
+RESPOSTA
+num1 = float(input("Digite um numero: "))
+num2 = float(input("Digite um outro numero: "))
+soma = num1 + num2
+print("A soma dos numeros é: ", soma)
+
+10. (FÁCIL) Faça um Programa que peça as 4 notas e calcule a média. Ao final do
+programa, mostre todas as notas e por fim, a média.
+
+RESPOSTA
+nota1 = float(input("Digite a primeira nota: "))
+nota2 = float(input("Digite uma segunda nota: "))
+nota3 = float(input("Digite uma terceira nota: "))
+nota4 = float(input("Digite uma nota quarta: "))
+mídia = (nota1 + nota2 + nota3 + nota4)/4
+print("A media das notas", nota1 , nota2 , nota3 , nota4 , "é ", media)
+
+14 . (EASY) Peça três números inteiros e imprima a soma entre eles
+
+RESPOSTA
+'''
+num01 = int(input("Digite um numero inteiro: "))
+num02 = int(input("Digite um outro numero inteiro: "))
+num03 = int(input("Digite um outro numero inteiro: "))
+soma = num01 + num02 + num03
+print("A soma dos numeros é ", soma)
+
+
+15. (HARD) Um funcionário recebeu um aumento de 25% no seu salário. Peça o salário atual e mais em tela o salário com o aumento.
+
+
+RESPOSTA
+salario = float(input("Qual o seu salário atual?"))
+aumento = salario * 1,25
+print("O seu salário com um aumento de 25% é ", aumento)
+
+16. DIFÍCIL) Um prêmio da loteria de R$ 5,00 dividido entre três pessoas. Informe o valor recebido por cada pessoa.
+
+RESPOSTA
+
+div = 540000/ 3
+print("O premio que cada pessoa vai receber R$", div
+
+19.(HARD) Peça três valores (um int, um float, uma string) ao usuário e ao final, mostre em tela o valor e o TIPO de cada um.
+
+RESPOSTA
+inteiro = int(input("Digite um numero inteiro: "))
+real = float(input("Digite um numero do tipo real: "))
+palavra = input("Informe uma palavra: ")
+print((tipo(inteiro)))
+print(tipo(real))
+print(tipo(palavra))
+
+
+11. (HARD) Faça um programa para uma loja de tintas. O programa deve pedir o
+tamanho em metros quadrados da área a ser pintada. Considere que a cobertura da
+tinta é de 1 litro para cada 3 metros quadrados e que a tinta é vendida em latas de 18
+litros, que custam R$ 80,00. Informe ao usuário a quantidade de latas de tinta
+compradas e o preço total.
+
+RESPOSTA
+
+area = float(input("Qual o tamanho da area a ser pintada?"))
+latas = int((área/18)+1)
+total = latas * 80
+print("Serão necessarias ", latas , "totalizando um valor de", total)
+
+12. (HARD) Peça ao usuário uma velocidade em Km/h (Quilômetro por hora) e converta
+para M/s (Metros por segundo).
+
+RESPOSTA
+
+km = float(input("Digite uma velocidade em km: "))
+cov = km/3,6
+print("A velocidade em m/s é: ", cov)
+
+13. (HARD) Altere o programa seja acima para que seja solicitado ao usuário em
+M/s, e então, converta para Km/h.
+
+RESPOSTA
+
+ms = float(input("Digite uma velocidade em m/s: "))
+cov = ms*3,6
+print("A velocidade em km é: ", cov)
+
+17. (HARD) O prêmio acima foi entregue à três ganhadores de um concurso.
+O primeiro receberá: 47%
+O segundo receberá: 31%
+O terceiro reservado o restante
+Calcule e mostre em tela o valor recebido por cada ganhador.
+
+RESPOSTA
+
+prêmio1 = 540000*0,47
+prêmio2 = 540000*0,31
+prêmio3 = 540000*0,22
+print("O primeiro ganhador receberá", premio1)
+print("O segundo ganhador receberá", premio2)
+print("O terceiro ganhador receberá", premio3)
+
+
+18. (HARD) Faça um Programa que peça 2 números inteiros e um número real. Cálculo e
+mais:
+
+1) o produto do dobro do primeiro com metade do segundo.
+
+2) a soma do triplo do primeiro com o terceiro.
+
+3) o terceiro elevador ao cubo.
+
+RESPOSTA
+
+num1 = int(input("Informe um numero inteiro: "))
+num2 = int(input("Informe um numero inteiro: "))
+num3 = float(input("Informe um numero real: "))
+multi = (2*num1)*(num2/2)
+soma = (3*num1)+num3
+potência = num3**3
+print("O produto do dobro do primeiro com a metade do segundo: ", multi)
+print("A soma do triplo do primeiro com o terceiro: ", soma)
+print("O terceiro valor elevado ao cubo: ", potencia)
+
+
+20. (HARD) Mostre em tela o valor da divisão de um número inteiro digitado pelo
+usuário por dois. OBS: A operação é por módulo: número MÓDULO 2.
+
+RESPOSTA
+
+num1 = int(input("Digite um numero: "))
+div = num1%2
+print("O resto do número solicitado por 2 é: ", div)
