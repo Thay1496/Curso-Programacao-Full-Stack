@@ -193,3 +193,22 @@ elif media>=4 and media<5:
     print(f"O aluno(a) {aluno} teve a média {media} e fará avaliação final")
 else:
     print(f"O aluno(a) {aluno} teve a média {media} e infelizmente foi reprovado")
+
+
+Atividade 09:
+Crie um algoritmo que peça o nome de dois times
+de futebol e quantos gols cada time fez na partida.
+Com os dados coletados, informe qual time
+venceu, qual time perdeu ou se houve empate
+
+time1 = input("Informe o nome do time ")
+gol1 = int(input("Informe a quantidade de gols feitos pelo time "))
+time2 = input("Informe o nome do outro time ")
+gol2 = int(input("Informe a quantidade de gols feitos pelo time "))
+
+if gol1>gol2:
+    print(f"O {time1} venceu!")
+elif gol1<gol2:
+    print(f"O {time2} venceu!")
+else:
+    print(f"Houve empate entre o {time1} e {time2}")
