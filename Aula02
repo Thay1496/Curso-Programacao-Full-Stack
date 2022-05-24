@@ -212,3 +212,15 @@ elif gol1<gol2:
     print(f"O {time2} venceu!")
 else:
     print(f"Houve empate entre o {time1} e {time2}")
+    
+    
+    Atividade 13:
+Crie um código que informe ao usuário se
+o número digitado por ele é PAR ou
+ÍMPAR.
+
+numero = int(input("Digite um numero: "))
+if (numero%2) ==0:
+  print("Esse numero é par")
+else:
+  print("Esse numero é impar")
