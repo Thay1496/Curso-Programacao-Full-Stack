@@ -1,0 +1,166 @@
+AQUECIMENTO 01:
+1) Peça um nome
+2) Peça o sobrenome
+
+Imprima o nome e o sobrenome utilizando F-STRINGS
+
+nome = input("Digite seu nome: ")
+sobrenome = input('Digite seu sobrenome: ')
+print(f'Bem vindo, {nome} {sobrenome}!')
+
+AQUECIMENTO 02:
+1) Peça um número inteiro e positivo
+2) Peça outro número inteiro e positivo
+Construa uma CALCULADORA com as operações básicas: soma, subtração, multiplicação e divisão.
+Obs: o usuário que irá escolher a operação! 
+
+DICA: Utilizando "\n" você consegue quebrar as linhas.
+	   Utilizando "\t" você dá o espaço de um TAB à string.
+     
+numero1= int(input('Digite um numero: '))
+numero2= int(input('Digite outro numero: '))
+escolha= int(input('Esolha uma operação a ser realizada: \n[1]Soma \n[2]Subtração \n[3]Divisão \n[4]Multiplicação \n'))
+
+if escolha==1:
+    print(f'A soma entre {numero1} e {numero2} é {numero1+numero2}')
+elif escolha==2:
+    print(f'A subtração entre {numero1} e {numero2} é {numero1 - numero2}')
+elif escolha==3:
+    print(f'A divisão entre {numero1} e {numero2} é {numero1 / numero2}')
+elif escolha==4:
+    print(f'A multiplicação entre {numero1} e {numero2} é {numero1 * numero2}')
+else:
+    print('Opção invalida')
+    
+ AQUECIMENTO 03:
+1) Peça o usuário
+2) Peça a senha
+Se o usuário for admin e a senha 619: acesso liberado, senão, acesso bloqueado.
+
+DICA: .lower() 
+
+Aquecimento FINAL:
+Crie um código que informe ao usuário se 
+o número digitado é PAR ou ÍMPAR
+
+num1 = float(input("Digite um número: "))
+if (num1%2)==0:
+    print("O número digitado é PAR!")
+else:
+    print("O número digitado é IMPAR!")
+    
+ ATIVIDADE 03:
+Imprima em tela a sequência de
+0 até 50.
+
+contador=0
+while contador<=50:
+    print(contador)
+    contador=contador+1
+    
+ATIVIDADE 04:
+Imprima em tela a sequência de
+100 até 0.
+
+contador=100
+while contador>=0:
+    print(contador)
+    contador=contador-1
+    
+ATIVIDADE 05:
+Imprima em tela a sequência de
+50 até 10.
+
+contador=50
+while contador>=10:
+    print(contador)
+    contador=contador-1
+    
+ATIVIDADE 06:
+Imprima em tela a sequência de
+70 até 94.
+
+contador=70
+while contador<=94:
+    print(contador)
+    contador=contador+1
+    
+ ATIVIDADE 07:
+Imprima todos os números pares de 0 à 100.
+Logo depois, imprima todos os números ímpares de 0 à 100.
+
+print("\nNUMEROS PARES")
+contador = 0
+while contador<=100:
+    if contador%2==0:
+        print(contador)
+    contador= contador+1
+
+print("\nNUMEROS IMPARES")
+contador=0
+while contador<=100:
+    if contador%2==1:
+        print(contador)
+    contador=contador+1
+    
+QUESTÃO EXTRA
+
+Peça ao usuário para informar 10 números inteiros e em seguida informe quantos dos números são pares e quantos são ímpares    
+    
+ contador=1
+par = 0
+impar = 0
+while contador<=10:
+    num = int(input(f'Digite o {contador}° numero: '))
+    if num % 2 == 0:
+       par+=1
+    else:
+        impar+=1
+    contador=contador+1
+
+print(f'O usuário digitou  {par} pares  e numeros {impar} impares')
+
+ATIVIDADE 08:
+Imprima em tela a sequência de
+0 até o número POSITIVO digitado pelo usuário.
+
+num = int(input('Digite um numero: '))
+contador=0
+
+while contador <= num:
+    print(contador)
+    contador=contador+1
+    
+ nota = int(input('Digite uma nota entre 0 e 10: '))
+
+
+ATIVIDADE 10:
+Crie um programa que peça uma nota entre 0 e 10.
+Se o valor for diferente, informe que é inválido e peça novamente o número até que o usuário acerte.
+
+
+while True:
+    if nota<0 or nota>10:
+        print('Número invalido')
+        nota = int(input('Digite uma nota entre 0 e 10: '))
+    else:
+        break
+        
+ ATIVIDADE 11:
+Escolha um número entre 1 e 10 e peça para que o usuário tente  acertar este valor. 
+Informe se o palpite é maior ou menor que o número secreto. 
+Quando o número estiver correto, imprima uma mensagem para isso.
+
+
+valor=5
+while True:
+    nota = int(input('Digite uma numero entre 1 e 10: '))
+    if nota<valor:
+        print('Numero é menor que o numero secreto')
+        continue
+    elif nota>valor:
+        print('O numero é maior que o numero secreto')
+        continue
+    else:
+        print("PARABÉNS!! Você acertou o numero")
+        break
