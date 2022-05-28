@@ -164,3 +164,43 @@ while True:
     else:
         print("PARABÉNS!! Você acertou o numero")
         break
+	
+Atividade 09 (pode fazer depois!):
+Imprima em tela a sequência de
+0 até o número NEGATIVO digitado
+pelo usuário.
+
+num= int(input('Digite um numero negativo: '))
+contador=0
+while contador>=num:
+        print(contador)
+        contador=contador-1
+	
+Atividade 12:
+Peça 5 números e informe a soma de todos
+eles.
+
+contador=1
+soma=0
+while contador<=5:
+    num = int(input("Digite um numero: "))
+    contador = contador+1
+    soma = soma + num
+print(f"A soma dos números é igual a {soma}")
+
+
+Atividade 12.1:
+Peça 5 números e informe a soma de todos
+eles e a média
+
+
+contador=1
+soma=0
+while contador<=5:
+    num = int(input("Digite um numero: "))
+    contador = contador+1
+    soma = soma + num
+    media= soma/5
+print(f"A soma dos números é igual a {soma} e a media dos numeros é igual a {media}")
+
+
