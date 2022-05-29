@@ -204,3 +204,37 @@ while contador<=5:
 print(f"A soma dos números é igual a {soma} e a media dos numeros é igual a {media}")
 
 
+Atividade 13:
+A sua empresa precisa de um sistema para calcular as
+médias das avaliações dos candidatos da nova entrevista.
+Desenvolva um programa que peça 4 notas e depois
+calcule a média.
+
+contador=1
+soma=0
+media=0
+while contador<=4:
+    nota = int(input("Informe uma nota: "))
+    contador+=1
+    soma=soma+nota
+    media=soma/4
+
+print(f"A media das notas é {media}")
+
+Desafio 01:
+Crie um programa que leia 5
+números e informe o maior
+número.
+
+'''contador=1
+maior_num=0
+
+while contador<=5:
+    num = int(input("Informe um numero: "))
+    if num > maior_num:
+        maior_num = num
+    contador += 1
+print(f"O maior numero digitado foi {maior_num}")'''
+
+
+
