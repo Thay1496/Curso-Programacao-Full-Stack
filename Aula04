@@ -1,0 +1,178 @@
+Aquecimento 01
+
+Peça para o usuário digitar dois nomes e imprima o maior deles utilizando F-STRING.
+
+nome1 = input("Digite o primeiro nome: ")
+nome2 = input("Digite o segundo nome: ")
+if len(nome1)>len(nome2):
+    print(f"O maior nome é {nome1}")
+elif len(nome2) > len(nome1):
+    print(f"O maior nome é {nome2}")
+else:
+    print('Os dois tem o mesmo tamanho')
+    
+    
+    
+Aquecimento 02
+
+Solicite ao usuário um número inteiro e imprima na tela:
+i) O quadrado do número caso seja par
+ii) O cubo caso o número seja ímpar
+
+import math
+num = int(input("Digite um numero: "))
+if num%2==0:
+    print(f"O quandrado do numero é {pow(num,2)}")
+else:
+    print(f"O cubo do numero é {pow(num,3)}")
+    
+    
+Aquecimento 03
+
+Crie um programa que receba o valor de um capital investido, a taxa de juros, a modalidade (Simples ou Composto) e o tempo de aplicação e, ao final, mostre o montante.
+REFAZER
+capital = float(input("Digite o capital investido: "))
+taxa = float(input("Taxa de juros: "))
+tempo= float(input("Tempo: "))
+tipo_juros = input("Simmples ou Composto:  ")
+if tipo_juros=="Simples":
+    montante = (capital*taxa*tempo)+capital
+elif tipo_juros =="Composto":
+    montante = capital*((1+taxa)**tempo)
+else:
+    print("Modalidade invalida")
+
+print(f"O montante é de {montante}")
+
+
+
+Aquecimento 04
+
+Solicite ao usuário que informe notas enquanto desejar e, ao final, informe a média das notas digitadas.
+
+contador=0
+soma= 0
+
+while contador>=0:
+    notas= int(input("Digite uma nota ou uma nota negativa para encerrar: "))
+    if notas>=0:
+        contador += 1
+        soma += notas
+    else:
+        break
+
+print(f" A média entre as notas é {(soma/contador)}")
+
+
+
+Questão 01
+Imprima em tela a sequência de 0 até 50.
+
+
+for contador in range(0,51):
+    print(contador)
+
+
+
+Questão 02
+Imprima em tela a sequência de
+100 até 0.
+
+for contador in range(100,-1,-1):
+    print(contador)
+    
+ 
+Questão 03
+Peça 5 números e informe a soma de todos eles e a média
+
+
+soma=0
+for contador in range(1,6):
+    nota = int(input("Digite uma nota: "))
+    soma+=nota
+print(f"A soma das notas é {soma} e a media é {(soma/contador):.2f}")
+
+
+
+Questão 04
+Crie um programa que peça dez números inteiros e positivos.
+Ao finalizar, informe separadamente o valor da soma dos números pares e dos números ímpares.
+'''	
+
+somapares=0
+somaimpares=0
+for contador in range(1,11):
+    num = int(input("Digite uma numero: "))
+    if num%2==0:
+       somapares = somapares + num
+    else:
+        somaimpares+=num
+
+print(f"A soma dos pares {somapares}")
+print(f"A soma dos impates é {somaimpares}")
+
+
+Questão 05
+Solicite ao usuário um limite inferior e um superior, depois informe quantos números pares existem no intervalo.
+
+
+num1 = int(input("Informe o limite inferior: "))
+num2 = int(input("Informe o limite superior: "))
+numpares=0
+for contador in range(num1,num2):
+    if contador%2==0:
+        numpares+=1
+
+print(f"A quantidade de pares é {numpares}")
+
+
+Questão 06
+Crie um algoritmo que imprima na tela os números de 1 a 10, sendo primeiramente os números pares e, em seguida, os ímpares.
+
+
+numPares=0
+numImpares=0
+for cont in range(1,11):
+    if cont%2==0:
+        numPares=cont
+        print(numPares)
+
+for cont in range(1,11):
+    if cont%2==1:
+        numImpares=cont
+        print(numImpares)
+        
+        
+        
+        
+nome = "thayane cavalcante"
+qtdVogais=0
+qtdCons=0
+for vog in nome:
+    if vog in 'aeiou':
+        qtdVogais = qtdVogais + 1
+print(qtdVogais)
+
+for cons in nome:
+    if cons in "bcdfghjklmnpqrstvwxyz":
+     qtdCons+=1
+print(qtdCons)        
+
+
+
+'''
+questão 12
+O Sr. Manoel Joaquim acaba de adquirir uma panificadora e pretende implantar a metodologia da tabelinha, que já é um sucesso na sua loja de 1,99. Você foi contratado para desenvolver o programa que monta a tabela de preços de pães, de 1 até 50 pães, a partir do preço do pão informado pelo usuário, conforme o exemplo abaixo:
+
+Preço do pão: R$ 0.18
+Panificadora Pão de Ontem - Tabela de preços
+1 - R$ 0.18
+2 - R$ 0.36
+...
+50 - R$ 9.00
+'''
+
+preco = float(input("Informe o preço do pão: "))
+for num in range (1,51):
+    print(f"{num} - R${(num*preco):.2f}")
+
