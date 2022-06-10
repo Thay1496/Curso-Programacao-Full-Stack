@@ -1,0 +1,60 @@
+AQUECIMENTO 1
+
+Determinada empresa resolveu dar um aumento a todos seus funcionários seguindo a seguinte tabela:
+Salários até R$1.000,00 – ajuste de 15%
+Salários até R$3.000,00 – ajuste de 10%
+Salários acima de R$3.000,00 – ajuste de 5%
+Crie um algoritmo que solicite o salário e, em seguida, informe o valor reajustado.
+
+
+salario = float(input('Informe o salário do funcionário: '))
+if salario <=1000:
+    print(f'O novo salário do funcionário com o aumento será de {salario * 1.15:.2f}')
+elif salario >1000 and salario<=3000:
+    print(f'O novo salário do funcionário com o aumento será de {salario * 1.10:.2f}')
+else:
+    print(f'O novo salário do funcionário com o aumento será de {salario * 1.05:.2f}')
+    
+ 
+ 
+ AQUECIMENTO 2
+ 
+ Escreva um algoritmo que solicite ao usuário a entrada de 10 idades e mostre na tela a classificação da população seguindo os critérios:
+média até 18 anos – População jovem
+média entre 18 e 58 anos – População adulta
+média acima de 58 anos – População idosa
+
+
+soma = 0
+media = 0
+for cont in range(1,11):
+    idade = int(input('Infome as idades: '))
+    soma = soma + idade
+
+media = soma/10
+
+if media < 18:
+    print('População jovem')
+elif media >= 18 and media < 58:
+    print('População adulta')
+else:
+    print('População idosa')
+    
+    
+ATIVIDADE 01
+
+Escreva uma função que receba um número inteiro como parâmetro e informe se ele é positivo, negativo ou nulo.
+
+def funcao1(num1):
+    if num1 >0:
+        print('Número positvo')
+    elif num1<0:
+        print('Número negativo')
+    else:
+        print('Numero nulo')
+
+num1 = int(input('Informe um numero: '))
+funcao1(num1)
+
+
+
