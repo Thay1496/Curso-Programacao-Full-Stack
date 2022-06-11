@@ -57,4 +57,121 @@ num1 = int(input('Informe um numero: '))
 funcao1(num1)
 
 
+ATIVIDADE 02
+
+Escreva uma função que receba um nome como parâmetro e informe quantas vogais existem nele.
+
+
+def qtdVogal(nome):
+    q = 0
+    for vogal in nome:
+        if vogal.lower() in 'aeiou':
+            q = q + 1
+    print(q)
+nome = input('Digite um nome: ')
+qtdVogal(nome)
+
+
+ATIVIDADE 03
+
+Crie uma função que receba dois números como parâmetros, verifique e retorne a quantidade (0, 1 ou 2) de números pares.
+
+def pares(num1,num2):
+    cont = 0
+    if num1 % 2 == 0:
+       cont += 1
+    if num2 % 2 == 0:
+        cont+=1
+    return cont
+
+num1 = int(input('Digite um numero: '))
+num2 = int(input('Digite outro numero: '))
+qtdP = pares(num1,num2)
+print(f'Você digitou {qtdP} numeros pares')
+
+
+ATIVIDADE 04
+
+Escreva uma função que receba dois parâmetros, sendo o primeiro um número inteiro e o segundo uma porcentagem, 
+depois calcule e retorne o valor do número somado ao aumento percentual informado.
+
+def funcao2 (num1,num2):
+    aumento = (num1 * (num2/100))+ num1
+    return aumento
+
+num1 = int(input('Digite um numero: '))
+num2 = float(input('Digite um percentual: '))
+resultado = funcao2(num1,num2)
+print(resultado)
+
+
+ATIVIDADE 05
+
+Crie duas funções, uma que irá SOLICITAR, verificar e retornar qual o maior dentre dois números pares informado, outra que fará a mesma coisa para dois números ímpares.
+Em seguida, some os dois retornos e apresente o valor do resultado.
+
+def par1 ():
+    valor1 = int(input('Digite um mumero par: '))
+    valor2 = int(input('Digite outro numero par: '))
+    if valor1 >= valor2:
+        return valor1
+    else:
+        return valor2
+
+
+def impar1 ():
+    num1 = int(input('Digite um numero impar: '))
+    num2 = int(input('Digite outro numero impar: '))
+    if num1 > num2:
+        return num1
+    else:
+        return num2
+
+par = par1()
+impar = impar1()
+print(f'A soma dos maiores números é igual a {par+impar}')
+
+
+ATIVIDADE 06
+
+Escreva uma função que deve receber seu nome como parâmetro e retornar a mensagem “Boa aula, {seuNome}”.
+Caso por algum engano não seja informado nenhum parâmetro, o retorno deve ser “Boa aula, Fulaninho de Tal”.
+
+def saudacao(nome = 'Fulaninho de tal'):
+    print(f'Boa aula, {nome}')
+
+saudacao('Thayane')
+
+
+ATIVIDADE 10
+
+Escreva uma função que recebe como entrada um número inteiro positivo n e retorne a soma de todos os inteiros positivos menores ou iguais a n.
+
+def numero ():
+    soma = 0
+    num1 = int(input('Digite um numero inteiro positivo: '))
+    for cont in range(0, num1+1):
+        soma+=cont
+    return soma
+
+soma = numero()
+print(f'A soma dos numeros inteiros positivos ou iguais ou menor é {soma}')
+
+
+ATIVIDADE 7
+
+Faça uma função que informe a quantidade de caracteres de uma frase informada por parâmetro.
+
+
+Obs: utilize as funções replace() e len() comentadas na aula passada
+
+
+def conta(frase):
+    frase1 = frase.replace(' ','')
+    qtd = len(frase1)
+    return qtd
+
+frase = 'A aula acabou bora sextar'
+qtd= conta(frase)
+print(qtd)
 
