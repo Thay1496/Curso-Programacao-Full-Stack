@@ -1,0 +1,41 @@
+import mysql.connector
+
+conexaoSQL = mysql.connector.connect(
+    host='localhost',
+    user = 'root',
+    password = '****',
+    database = 'produtoinformatica'
+)
+
+cursor = conexaoSQL.cursor()
+# C - CREATE
+# nome = 'Notebook'
+# preco = 3699
+# comandoSQL = f'INSERT INTO produtos (nome,preco) VALUES ("{nome}",{preco})'
+# print(f'Seu dado foi cadastrado,{nome} e {preco}')
+# cursor.execute(comandoSQL)
+# conexaoSQL.commit()
+
+#R - READ - SELECT
+
+# comandoSQL = f'SELECT *  FROM produtos;'
+# cursor.execute(comandoSQL)
+# resultadoProduto = cursor.fetchall()
+# print(resultadoProduto)
+
+# U - UPDATE
+# nome ='Notebook'
+# preco = 3589
+# comandoSQL = f'UPDATE produtos SET preco = {preco} WHERE nome = "{nome}";'
+# cursor.execute(comandoSQL)
+# conexaoSQL.commit()
+
+# D - DELETE
+# nome = 'Mouse'
+# comandoSQL = f'DELETE FROM produtos WHERE nome = "{nome}"'
+# cursor.execute(comandoSQL)
+# conexaoSQL.commit()
+
+
+cursor.close()
+conexaoSQL.close()
